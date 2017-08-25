@@ -1,0 +1,30 @@
+#!/bin/sh
+
+cd `dirname $0`
+
+if [ ! -d /Applications/Cura.app/Contents/Resources/resources/definitions ] ; then
+  echo ""
+  echo "Cura machine definition directory not found.  Is Cura installed?"
+  echo ""
+  sleep 10
+  exit
+fi
+
+echo ""
+echo "Installing monoprice_mini.def.json into /Applications/Cura.app/Contents/Resources/resources/definitions/"
+cp -p *json "/Applications/Cura.app/Contents/Resources/resources/definitions/"
+
+echo ""
+echo "Installing profiles into $HOME/Library/Application Support/cura/2.6/quality/"
+cp -p *cfg  "$HOME/Library/Application Support/cura/2.6/quality/"
+
+echo ""
+echo "Configuration files installed."
+echo ""
+echo "Exiting in 5" ; sleep 1
+echo "Exiting in 4" ; sleep 1
+echo "Exiting in 3" ; sleep 1
+echo "Exiting in 2" ; sleep 1
+echo "Exiting in 1" ; sleep 1
+
+exit 0
