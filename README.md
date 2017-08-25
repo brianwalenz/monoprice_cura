@@ -2,12 +2,10 @@
 and profiles for the [Monoprice Select Mini
 v2](https://www.monoprice.com/product?p_id=21711) 3D printer.
 
-## Features
+Adds a "Monoprice Select Mini" printer configuration to the "Other" machines in
+the "Add Printer" dialog.
 
-Installs a "Monoprice Select Mini" printer configuration.  Use Settings >
-Printer > Add Printer... > Other > Monoprice Select Mini to add your printer.
-
-Installs print settings for a variety of layer heights.
+Adds seven profiles specific to the Mini to the print profiles list.
 
 | Layer Height  | Name       | Options
 |---------------|------------|-------------------------
@@ -27,12 +25,17 @@ Installs print settings for a variety of layer heights.
 * The ExtraCoarse setting will move a lot of plastic.  Hot end temperature might
   need to be increased a bit.
 
+* Infill layer height, especially on ExtraFine, is not tested.
+
 * Retraction for all is set to 3mm at 40mm/sec.  This might be a tad too small.
   I haven't tested it much.
 
 ## Installation
 
-Unzip the package, double-click on 'install'.
+1. Install [Cura](https://ultimaker.com/en/products/cura-software).
+2. [Download](https://github.com/brianwalenz/monoprice_cura/archive/master.zip) this package.
+3. Unzip the package.
+4. Double-click on 'install'.
 
 Only supported on Mac OS.  The config files probably are platform independent,
 but I don't know where they go on other platforms.
